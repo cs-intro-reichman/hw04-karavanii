@@ -1,7 +1,7 @@
 public class Primes {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
-        double count =0;
+        double count =1;
         System.out.println("Prime numbers up to " + n + ":");
         System.out.println("2");
         System.out.println("3");
@@ -12,8 +12,7 @@ public class Primes {
                 count++;
             }
         }
-        count = count -1;
         int percent = (int)((count/ n)*100);
-        System.out.println("There are " +(int)count+" primes between 2 and "+n+" ("+(int)percent+"% are primes)");
+        System.out.println("There are " +(int)count +" primes between 2 and "+n+" ("+(int)percent+"% are primes)");
     }
 }
